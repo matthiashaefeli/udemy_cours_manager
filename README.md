@@ -23,14 +23,23 @@ error: Error: Unable to resolve module `react/lib/ReactComponentWithRenderMixin`
 this is the solution to that error.
 
 1 Uninstall react-native-router-flux
+
 2 Remove node modules => rm -rf node_modules
+
 3 yarn install
+
 4 yarn install react-native-screens
+
 5 yarn install react-native-gesture-handler
+
 6 yarn install react-native-reanimated
+
 7 yarn install react-native-router-flux
+
 8 cd ios
+
 9 pod install
+
 10 cd ..
 
 In the Router.js change the first Scene to Stack:
