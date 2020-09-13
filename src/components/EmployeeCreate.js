@@ -38,13 +38,13 @@ class EmployeeCreate extends Component {
             selectedValue={this.props.shift}
             onValueChange={day => this.props.employeeUpdate({ prop: 'shift', value: day })}
           >
-            <Picker.Itme label='Monday' value='Monday' />
-            <Picker.Itme label='Tuesday' value='Tuesday' />
-            <Picker.Itme label='Wednesday' value='Wednesday' />
-            <Picker.Itme label='Thursday' value='Thursday' />
-            <Picker.Itme label='Friday' value='Friday' />
-            <Picker.Itme label='Saturday' value='Saturday' />
-            <Picker.Itme label='Sunday' value='Sunday' />
+            <Picker.Item label='Monday' value='Monday' />
+            <Picker.Item label='Tuesday' value='Tuesday' />
+            <Picker.Item label='Wednesday' value='Wednesday' />
+            <Picker.Item label='Thursday' value='Thursday' />
+            <Picker.Item label='Friday' value='Friday' />
+            <Picker.Item label='Saturday' value='Saturday' />
+            <Picker.Item label='Sunday' value='Sunday' />
           </Picker>
         </CardSection>
 
