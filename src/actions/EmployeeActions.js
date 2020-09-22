@@ -43,6 +43,6 @@ export const employeeSave = ({ name, phone, shift, uid }) => {
   return () => {
     firebase.database().ref(`/users/${currentUser.uid}/employees/${uid}`)
       .set({ name, phone, shift })
-      .then()
+      .then(() => Actions.employeeList({ type: 'reset' }))
   }
 };
